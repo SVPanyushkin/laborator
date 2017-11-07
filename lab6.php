@@ -17,10 +17,10 @@ $myword = 'oflw';  //то что будем искать
     for ($i=0; $i<count($file); $i++)  //циклом проходимся по по каждому слову, сортируя буквы слова по алфавиту
     {
         $word = $file[$i];
-        $nword=trim($word);
-        $massiv = (str_split($nword));
-        sort($massiv, SORT_STRING);
-        $sortword=implode($massiv);
+        $nword=trim($word);  //- уберем пробелы
+        $massiv = (str_split($nword));  // преобразование в массив
+        sort($massiv, SORT_STRING); //сортировка
+        $sortword=implode($massiv); // преобразование в строку
         if ($sortmyword === $sortword)  // сравниваем с исходным словом $myword
         {
             print_r($word); //выводим найденные анаграммы
