@@ -1,4 +1,6 @@
 <?php
+/*Панюшкин Сергей*/
+//Лаборатторная работа №2
 
 $virazhenie = '5 8 3  + *';  // наше выражение
 echo calculation($virazhenie);
